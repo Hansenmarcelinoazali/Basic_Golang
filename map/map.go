@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //map adalah tipe kumpulan data lain yang berisi data yang tipe data sama
 
@@ -30,5 +32,17 @@ func main() {
 		{"address": "mangga street", "id": "k001"},
 		{"community": "chicken lovers"},
 	}
-	fmt.Println("ini adalah data:", data)
+	fmt.Println("ini adalah data map biasa:", data)
+
+	fmt.Println("=== ini make map ===")
+	var book map[string]string = make(map[string]string)
+	book["title"] = "buku Go-Lang"
+	book["author"] = "Eko Kurniawan"
+	book["wrong"] = "ups"
+
+	fmt.Println("ini adalah make map",book)
+
+	delete(book, "wrong")
+
+	fmt.Println(book)
 }
