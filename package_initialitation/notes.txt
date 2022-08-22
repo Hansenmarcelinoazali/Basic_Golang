@@ -1,0 +1,4 @@
+.package initialzation.
+
+package initialzation biasanya digunakan untuk koneksi database
+dengan menggunakan init pada function database maka akan di eksekusi secara otomatis
